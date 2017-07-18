@@ -15,9 +15,6 @@ You need some ethereum client. We used geth (go-Ethereum) for our setup. The fol
 
 Downloads for alls OS are on the [geth-website](https://launchpad.net/~ethereum/+archive/ubuntu/ethereum). There is also a [launchpad projekt](https://launchpad.net/~ethereum/+archive/ubuntu/ethereum) for deb-packages (Debian/Ubuntu) systems. You can even install the langauge compiler for solidity: solc.
 
-It is recommended that you sync and test with the testnet (04/2017: ropsten) before you deploy anything to the productive chain.
-In case ropsten is not working, there is a more stable testnet named [kovan](https://github.com/kovan-testnet/proposal) with a PoA instead of an PoW.
-
 Start geth for the first sync (or the rinkeby-testnet):
 		
 	geth --rinkeby console
@@ -57,7 +54,6 @@ For testing solidity-contracts you can used the following Ethereum test-framewor
 * ~~mocha + chaithereum (tests written in javascript running through web3)~~
 * testrpc together with truffle and mocha
 
-Contract-Testing is currently done using the truffle framework. Please check the [readme file in the contract folder](https://github.com/senacor/SmartContractSlackDapp/tree/master/smart-contract/lottery) for details.
 
 ## Run the program
 
@@ -106,18 +102,3 @@ Then you can ask the bot for some valid commands with
     @slackbot help
 
 For all commands see SlackMessageProcessor class.
-
-
-# Open Issues (TODOs)
-
-* ~~Publish the project on GitHub, share it with the students~~
-* ~~Write a nice configuration/settings file, so one can handle the parameters in a more readable and extendable way! Also possible to use JSON based configuration file in combinatiion with generating parameters...~~
-* Make more user friendly; add more "help features"
-* Make the application more testable (more refactoring)
-* Add tests to the nodeserver...
-* change the slack part to use the 'slackbots' module, checkout this tutorial: https://scotch.io/tutorials/building-a-slack-bot-with-node-js-and-chuck-norris-super-powers
-* change the mechanism to address the bot, it should be possible to react to messages without the bot name.
-* exctend the functionality and add other contracts (new MessageProcessor and EthereumContract class + configuration parameters).
-* implement more persistence features, so we can store the account information etc.
-
-

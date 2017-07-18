@@ -12,7 +12,7 @@ After the game was ended and the winner took the funds the admin can reset the l
 
 For details please check the ```Lottery.sol``` contract file located in the ```contracts``` folder. The contract methods should be self-explanatory.
 
-Note that picking a winner is not "secure random", but just according to the current block-hash. The lottery contract is a simple example to show how smart contracts work. If you are interested in introducing RNG into a smart contract you can take a look at the [RanDAO](https://github.com/randao/randao).
+Note that picking a winner is not "secure random", but just according to the current block-hash. The lottery contract is a simple example to show how smart contracts work. 
 
 The contract-project was setup according to the specification of the [truffle framework](http://truffleframework.com/docs/). 
 
@@ -37,8 +37,6 @@ There are 2 kinds of tests available:
 2. Tests written in Solidity 
 
 Both tests-styles were used according to the truffle specification. 
-
-***It is recommended to focus on the [tests written in javascirpt](https://github.com/senacor/SmartContractSlackDapp/blob/master/smart-contract/lottery/test/lottery.js).***
 
 The tests written in solidity are far from being complete. This is because the documentation on writing solidity tests in truffle is really bad. There are very few examples out there. 
 Previously we used [dapple](http://dapple.readthedocs.io/en/latest/) for writing tests in solidity; however it seemed dapple is not maintained any more. Features that were requested over a year ago were not worked into the framework. Recently dapple was moved to a new project called [Dapp](https://dapp.readthedocs.io/en/latest/). Further investigation will be needed to evaluate if it is powerful enough for complete tests.
